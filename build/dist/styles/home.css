@@ -1,0 +1,91 @@
+.container {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  height: clamp(400px, 50%, 600px);
+  width: clamp(400px, 33%, 450px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  border-top: none;
+}
+
+.top-bar {
+  height: 40px;
+  width: 100%;
+
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.tab-item {
+  width: 80px;
+  height: 100%;
+  border-right: 1px solid rgba(44, 44, 44, 0.25);
+}
+
+.tab-item button {
+  height: 100%;
+  width: 100%;
+
+  background-color: transparent;
+  border: none;
+
+  font-size: inherit;
+  font-family: cursive;
+}
+
+.active-tab {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid white;
+  font-size: 1.1rem;
+}
+
+.message-container {
+  position: absolute;
+  bottom: 0px;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  transition: 0.5s ease;
+  visibility: hidden;
+}
+
+.message {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px;
+
+  border-radius: 5px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.general {
+  background-color: rgb(65, 125, 238);
+  border: 1px solid rgb(16, 47, 105);
+  color: white;
+  visibility: visible;
+}
+
+.success {
+  background-color: rgb(36, 199, 63);
+  border: 1px solid rgb(15, 107, 31);
+  color: white;
+  visibility: visible;
+}
+
+.warning {
+  background-color: rgb(226, 58, 7);
+  border: 1px solid rgb(155, 0, 0);
+  color: white;
+  visibility: visible;
+}

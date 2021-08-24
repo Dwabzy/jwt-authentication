@@ -1,0 +1,45 @@
+/* Add CSS styles here! */
+body {
+  font-family: sans-serif;
+}
+
+:root {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  border-radius: 5px;
+  border-style: ridge;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  box-shadow: 0 0 0px 1000px #ffffff inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}

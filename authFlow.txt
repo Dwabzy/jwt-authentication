@@ -1,0 +1,21 @@
+User logs in
+    -> Access Token is sent to client via response
+    -> Refresh token is set in a http-only cookie and stored in database along with the userId.
+
+
+User sends request to private route
+    -> If Access Token is not present in memory
+        -> Send request to '/token' to get new access token
+    -> Else, request is passed on to the server.
+        -> If access token has expired, send request to '/token' to get new access token.
+        -> Else if access token is invalid, ask user to login
+        -> Else if access token is valid, Send requested data to the client.
+
+Request to '/token'
+    -> If refresh token is not present in header, ask user to login.
+    -> If the refresh token is marked as invalid in database ( marked as invalid when user logs out ), ask user to login.
+    -> If refresh token's signature does not match or if the token has expired, ask user to login.
+    -> Else if refresh token is verified, generate a new access token and send it to client via response.
+
+
+Note: The Access token contains 'userId' as payload to identify the user that has logged in.
