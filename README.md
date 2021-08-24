@@ -31,9 +31,9 @@ API for login and registration page using JWT authentication
 
 ### Built With
 
-- [https://nodejs.org/en/](NodeJS)
-- [https://expressjs.com/](Express)
-- [https://reactjs.org/](ReactJS)
+- [NodeJS](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
+- [ReactJS](https://reactjs.org/)
 
 
 ## Getting Started
@@ -57,7 +57,7 @@ To get a local copy up and running follow these simple steps.
 2. Change working directory to the clone
 
    ```sh
-   cd jwt-authentication-assignment
+   cd jwt-authentication
    ```
 
 3. Install NPM packages
@@ -80,7 +80,7 @@ After Installing the required packages. Do the following steps
 
 or
    ```sh
-   npm start
+   node app.js
 ```
 
 
