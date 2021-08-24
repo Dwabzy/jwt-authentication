@@ -1,4 +1,7 @@
 const jwt = require("jsonwebtoken");
+let { tokenConfig } = require('../configs');
+
+let { ACCESS_TOKEN_SECRET } = tokenConfig;
 
 let verifyToken = async (req, res, next) => {
     let token;
@@ -12,7 +15,7 @@ let verifyToken = async (req, res, next) => {
         token = header.split(' ')[1];
 
 
-    jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, decoded) => {
+    jwt.verify(token, ACCESS_TOKEN_SECRET, (err, decoded) => {
         /* If the Token has expired, a response is sent back to client with a expired value set to true. The Request is intercepted and a request is 
         sent to the /token route, which returns a new access token if a verified refresh token is present and resends the original request.
 

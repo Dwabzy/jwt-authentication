@@ -2,6 +2,9 @@ const token = require('express').Router();
 const jwt = require("jsonwebtoken");
 const { Token } = require("../models");
 const createTokens = require("../helpers/tokens");
+let { tokenConfig } = require('../configs');
+
+let { REFRESH_TOKEN_SECRET } = tokenConfig;
 
 token.get('/', async (req, res) => {
 
@@ -25,7 +28,7 @@ token.get('/', async (req, res) => {
     }
 
     // Verify refresh token
-    jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET, (err, user) => {
+    jwt.verify(refreshToken, REFRESH_TOKEN_SECRET, (err, user) => {
         // If refresh token is invalid, ask the user to login
         if (err) return res.status(403).json({ accessToken: null, vaildRefreshToken: false });
 
