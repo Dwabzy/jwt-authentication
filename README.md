@@ -1,6 +1,4 @@
-# x-email-verify-assignment
-
-JWT Authorization
+# jwt-authentication
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -20,19 +18,16 @@ JWT Authorization
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#working">Working</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
+
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`Dwabzy`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+-API for login and registration page using JWT authentication
 
 ### Built With
 
@@ -40,7 +35,6 @@ Here's a blank template to get started:
 - [https://expressjs.com/](Express)
 - [https://reactjs.org/](ReactJS)
 
-<!-- GETTING STARTED -->
 
 ## Getting Started
 
@@ -58,7 +52,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Dwabzy/repo_name.git
+   git clone https://github.com/Dwabzy/jwt-authentication.git
    ```
 2. Change working directory to the clone
 
@@ -70,8 +64,6 @@ To get a local copy up and running follow these simple steps.
    ```sh
    npm install
    ```
-
-<!-- USAGE EXAMPLES -->
 
 ## Usage
 
@@ -92,12 +84,12 @@ or
     node app.js
     ```
 
-<!-- CONTACT -->
+## Working
+  The authentication flow is given in the authFlow.txt file present in the root directory
 
 ## Contact
 
 Pragadeesh J S - jspragadeesh@gmail.com
 
-Project Link: [https://github.com/Dwabzy/repo_name](https://github.com/Dwabzy/repo_name)
+Project Link: [https://github.com/Dwabzy/jwt-authentication.git](https://github.com/Dwabzy/jwt-authentication.git)
 
-<!-- ACKNOWLEDGEMENTS -->
