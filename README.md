@@ -27,7 +27,7 @@
 
 ## About The Project
 
--API for login and registration page using JWT authentication
+API for login and registration page using JWT authentication
 
 ### Built With
 
@@ -46,7 +46,7 @@ To get a local copy up and running follow these simple steps.
   ```sh
   npm install npm@latest -g
   ```
-- MySQL server
+- MySQL
 
 ### Installation
 
@@ -79,10 +79,10 @@ After Installing the required packages. Do the following steps
 ```
 
 or
+   ```sh
+   npm start
+```
 
-    ```sh
-    node app.js
-    ```
 
 ## Working
   The authentication flow is given in the authFlow.txt file present in the root directory
@@ -91,5 +91,5 @@ or
 
 Pragadeesh J S - jspragadeesh@gmail.com
 
-Project Link: [https://github.com/Dwabzy/jwt-authentication.git](https://github.com/Dwabzy/jwt-authentication.git)
+Project Link: [https://github.com/Dwabzy/jwt-authentication.git](https://github.com/Dwabzy/jwt-authentication)
 
