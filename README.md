@@ -85,7 +85,7 @@ or
 ```sh
 node app.js
 ```
-5. The app should open up in localhost in the specified port, default is 3000
+5. The app should open up in localhost in the specified port, default is 5000
 
 
 ## Working
