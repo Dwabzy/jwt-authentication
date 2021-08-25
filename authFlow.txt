@@ -18,4 +18,8 @@ Request to '/token'
     -> Else if refresh token is verified, generate a new access token and send it to client via response.
 
 
-Note: The Access token contains 'userId' as payload to identify the user that has logged in.
+Note: 
+    1. The Access token contains 'userId' as payload to identify the user that has logged in.
+    2. The Access Token is set to expire in 5 minutes by default
+    3. The Refresh Token is set to expire in 7 days by default
+        
