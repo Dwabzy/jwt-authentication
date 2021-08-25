@@ -78,12 +78,12 @@ After Installing the required packages. Do the following steps
 4. In the root directory, run the app using.
 
 ```sh
-   npm start
+npm start
 ```
 
 or
-   ```sh
-   node app.js
+```sh
+node app.js
 ```
 5. The app should open up in localhost in the specified port, default is 3000
 
