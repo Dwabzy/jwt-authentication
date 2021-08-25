@@ -85,7 +85,7 @@ or
 ```sh
 node app.js
 ```
-5. The app should open up in localhost in the specified port, default is 5000
+5. The app should open up in localhost in the specified port, default is 5000. Changing it will cause problems as the requests are sent to port 5000 in the react app.
 
 
 ## Working
