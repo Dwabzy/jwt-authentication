@@ -5,7 +5,7 @@ let { REFRESH_TOKEN_SECRET, ACCESS_TOKEN_SECRET } = tokenConfig;
 module.exports = {
     generateAccessToken: (userId, duration) => {
         if (!duration)
-            duration = "5s";
+            duration = "5m";
         return jwt.sign({ id: userId }, ACCESS_TOKEN_SECRET, {
             expiresIn: duration
         });
